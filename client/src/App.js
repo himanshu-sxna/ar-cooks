@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import API from "../src/utils/API";
+import API from "./utils/API";
+import Home from "./pages/Home/Home";
 
 function App() {
 
@@ -8,16 +9,14 @@ function App() {
   useEffect(() => { 
     API.APICall()
     .then(res => {
-      console.log((res));
+      console.log(res);
       setState(res.data.success);
-    });
+    })
   }, [state]);
 
 
   return (
-    <div className="App">
-      <p>{state}</p>
-    </div>
+    <Home/>
   );
 }
 
