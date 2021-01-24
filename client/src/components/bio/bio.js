@@ -28,7 +28,7 @@ function Bio() {
                 </MDBCol>
                 <MDBCol className="mt-2">
                     <Fade right>
-                    <MDBTypography tag="p" className="font-weight-bolder">
+                    <MDBTypography tag="p" className="font-weight-bolder mt-3 nameClass text-monospace">
                         Hi!  I am Archy,
                     </MDBTypography>
                     <p className="story-text">
