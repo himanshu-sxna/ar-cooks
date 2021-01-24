@@ -1,0 +1,13 @@
+.icon-text {
+    text-decoration: none;
+    color: black;
+}
+label.active,
+i.active {
+    color: #2bbbad !important;
+}
+.form-control:focus {
+    border-color: #2bbbad !important;
+    outline: 0 none !important;
+    box-shadow: none;
+}
