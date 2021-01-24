@@ -190,5 +190,6 @@ $RECYCLE.BIN/
 *.lnk
 
 Docs/
+build/
 
 # End of https://www.toptal.com/developers/gitignore/api/osx,windows,vscode,react,node
