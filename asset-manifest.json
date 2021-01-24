@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ar-cooks/static/css/main.c87baf2e.chunk.css",
-    "main.js": "/ar-cooks/static/js/main.4aa1bffd.chunk.js",
-    "main.js.map": "/ar-cooks/static/js/main.4aa1bffd.chunk.js.map",
+    "main.js": "/ar-cooks/static/js/main.ebf89e5b.chunk.js",
+    "main.js.map": "/ar-cooks/static/js/main.ebf89e5b.chunk.js.map",
     "runtime-main.js": "/ar-cooks/static/js/runtime-main.1e3fab6c.js",
     "runtime-main.js.map": "/ar-cooks/static/js/runtime-main.1e3fab6c.js.map",
     "static/css/2.b6e5eff9.chunk.css": "/ar-cooks/static/css/2.b6e5eff9.chunk.css",
@@ -31,6 +31,6 @@
     "static/css/2.b6e5eff9.chunk.css",
     "static/js/2.5f3ca846.chunk.js",
     "static/css/main.c87baf2e.chunk.css",
-    "static/js/main.4aa1bffd.chunk.js"
+    "static/js/main.ebf89e5b.chunk.js"
   ]
 }
