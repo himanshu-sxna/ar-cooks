@@ -10,7 +10,7 @@ import { MDBContainer,
          MDBCardTitle, 
          MDBCardText,
          MDBCollapse } from "mdbreact";
-import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 import "./services.css";
 import dBoxImg from "../../images/delivery_box.jpg";
 import eventImg from "../../images/events.jpg";
@@ -82,7 +82,7 @@ function Services() {
             <MDBRow className="mt-5">
             { allServices.map((service) =>
                 <MDBCol lg="4" className="mt-1">
-                    <Flip top> 
+                    <Fade bottom> 
                         <MDBCard key={service.title}>
                             <MDBCardImage hover overlay="white-slight" className=" card-img-top" src={service.image}/>
                             <MDBCardBody className="text-center">
@@ -94,7 +94,7 @@ function Services() {
                                 </MDBCollapse>
                             </MDBCardBody>
                         </MDBCard> 
-                    </Flip>
+                    </Fade>
                 </MDBCol>
             )}
             </MDBRow>
