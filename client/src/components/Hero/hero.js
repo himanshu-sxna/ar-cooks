@@ -55,22 +55,22 @@ function Hero() {
           <MDBView src={img} className="hero-img">
             <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
               <Fade cascade duration={2000}>
-              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3">
+              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
                 Refined Taste
               </MDBTypography>
               </Fade>
               <Fade cascade delay={1000} duration={2000}>
-              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3">
+              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
                 Authentic Flavors
               </MDBTypography>
               </Fade>
               <Fade cascade delay={2000} duration={2000}>
-              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3">
+              <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
                 Innovative Vegetarian Recipes
               </MDBTypography>
               </Fade>
               <Fade cascade delay={3000} duration={2500}>
-              <MDBTypography tag="h1" variant="h1-responsive" className="hero-h1" >
+              <MDBTypography tag="h1" variant="h1-responsive" className="hero-h1 mx-1" >
                 Welcome to Archy Cooks
               </MDBTypography>
               </Fade>
