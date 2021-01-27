@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { MDBNavbar,
          MDBNavbarBrand,
          MDBNavbarNav,
@@ -20,30 +19,29 @@ function Navbar () {
     };
 
     return(
-        <div>
-        <header>
-          <Router>
-              <MDBNavbar light fixed="top" expand="md" scrolling scrollingNavbarOffset={100} className="navClass">
-                <MDBNavbarBrand href="/">
-                  <p>Archy Cooks</p>
-                </MDBNavbarBrand>
-                {!isWideEnough && <MDBNavbarToggler onClick={onClick} />}
-                <MDBCollapse isOpen={collapse} navbar>
-                <MDBNavbarNav right>
-                  <MDBNavItem active>
-                    <MDBNavLink to="#">HOME</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">ABOUT</MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">CONTACT</MDBNavLink>
-                  </MDBNavItem>
-                </MDBNavbarNav>
-                </MDBCollapse>
-              </MDBNavbar>
-          </Router>
-        </header>
+      <div>
+        <MDBNavbar dark expand="md" color="default-color-dark" fixed="top" scrolling scrollingNavbarOffset={200} className="introWrapper">
+          <MDBNavbarBrand href="/">
+            <strong>Archy Cooks Logo</strong>
+          </MDBNavbarBrand>
+          {!isWideEnough && <MDBNavbarToggler onClick={onClick} />}
+          <MDBCollapse isOpen={collapse} navbar>
+            <MDBNavbarNav right>
+              <MDBNavItem className="navPills">
+                <MDBNavLink to="/home">HOME</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="navPills">
+                <MDBNavLink  to="/products">PRODUCTS</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="navPills" >
+                <MDBNavLink to="/blog">BLOG</MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="navPills" >
+                <MDBNavLink to="#">CONTACT</MDBNavLink>
+              </MDBNavItem>
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar>
       </div>
     );
 };

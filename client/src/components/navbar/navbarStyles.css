@@ -1,4 +1,6 @@
-.navClass {
+.introWrapper {
    box-shadow: none;
-   background-color: #fcfdfa; 
+}
+.navPills {
+   font-weight: 400;
 }
