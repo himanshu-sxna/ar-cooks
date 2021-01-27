@@ -15,8 +15,7 @@ function Home() {
             <Bio/>
             <Contact/>
             <Footer/>
-        </div>
-        
+        </div> 
     );
 };
 
