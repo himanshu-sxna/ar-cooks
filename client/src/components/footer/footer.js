@@ -15,7 +15,7 @@ const imgArray = [ img1, img2, img3, img4, img5, img6 ];
 
 function Footer() {
   return (
-    <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-5">
+    <MDBFooter color="default-color-dark" className="font-small pt-4 mt-5">
       <MDBContainer className="text-center">
         <MDBRow className="text-center">
           <MDBCol>
