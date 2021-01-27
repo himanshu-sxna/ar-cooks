@@ -88,7 +88,7 @@ function Services() {
                             <MDBCardBody className="text-center">
                                 <MDBCardTitle>{service.title}</MDBCardTitle>
                                 <MDBCardText>{service.short}</MDBCardText>
-                                <MDBBtn onClick={()=>toggleCollapse(service.title)}>Know more</MDBBtn>
+                                <MDBBtn className="btn" onClick={()=>toggleCollapse(service.title)}>Know more</MDBBtn>
                                 <MDBCollapse isOpen={service.collapseId} >
                                     {service.desc}
                                 </MDBCollapse>
