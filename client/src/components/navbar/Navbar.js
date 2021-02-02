@@ -22,7 +22,7 @@ function Navbar () {
       <div>
         <MDBNavbar dark expand="md" color="default-color-dark" fixed="top" scrolling scrollingNavbarOffset={200} className="introWrapper">
           <MDBNavbarBrand href="/">
-            <strong>Archy Cooks Logo</strong>
+            <strong>LOGO</strong>
           </MDBNavbarBrand>
           {!isWideEnough && <MDBNavbarToggler onClick={onClick} />}
           <MDBCollapse isOpen={collapse} navbar>
@@ -35,9 +35,6 @@ function Navbar () {
               </MDBNavItem>
               <MDBNavItem className="navPills" >
                 <MDBNavLink to="/blog">BLOG</MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem className="navPills" >
-                <MDBNavLink to="#">CONTACT</MDBNavLink>
               </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
