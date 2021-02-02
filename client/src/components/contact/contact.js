@@ -22,12 +22,12 @@ return (
             <MDBRow className="mt-4">
                 <MDBCol md="4 mx-5 mt-3">
                     <MDBTypography tag="p">
-                        We love to look after your catering needs, please feel free to get in touch with us if you have any questions.
+                        We would love to hear from you.
                     </MDBTypography>
                     <MDBTypography tag="p" className="pt-2">
                         <a href="mailto:archycooks1@gmail.com" >
                             <i className="fa fa-envelope mr-2 icon-text" /> 
-                            <span className="icon-text">archycooks1@gmail.com</span> 
+                            <span className="icon-text">mybusiness@mail.com</span> 
                         </a>
                     </MDBTypography>
                     <MDBTypography tag="p">
