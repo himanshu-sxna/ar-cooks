@@ -44,7 +44,7 @@ function Hero() {
         </MDBCollapse>
       </MDBNavbar>
         <MDBView src={img} className="hero-img">
-          <MDBMask overlay="black-strong" className="flex-center flex-column text-white text-center">
+          <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
             <Fade cascade duration={2000}>
             <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
               Landing Page
