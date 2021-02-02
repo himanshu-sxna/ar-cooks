@@ -5,6 +5,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 const Auth0ProviderWithHistory = ({ children }) => {
   const domain = process.env.REACT_APP_AUTH0_DOMAIN;
   const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+  const cbURI = process.env.REACT_APP_AUTH0_CB_URI
 
   const history = useHistory();
 
@@ -14,9 +15,9 @@ const Auth0ProviderWithHistory = ({ children }) => {
 
   return (
     <Auth0Provider
-      domain={"dev-ffadjxqj.au.auth0.com"}
-      clientId={"b67giT7oc4UHZdDyyGlZo9YJEilYbqBv"}
-      redirectUri={"https://smb-template.herokuapp.com/admin"}
+      domain={domain}
+      clientId={clientId}
+      redirectUri={cbURI}
       onRedirectCallback={onRedirectCallback}
     >
       {children}
