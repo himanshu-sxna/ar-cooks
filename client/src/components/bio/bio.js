@@ -21,21 +21,21 @@ function Bio() {
                 </MDBCol>
             </MDBRow>
             <MDBRow className="mt-5">
-                <MDBCol md="8" >
+                <MDBCol md="8" className="mt-4" >
                     <Fade left>
                     <img src={img} className="img-fluid" alt="bio.jpg" />
                     </Fade>
                 </MDBCol>
-                <MDBCol className="mt-2">
+                <MDBCol className="">
                     <Fade right>
                     <MDBTypography tag="p" className="font-weight-bolder mt-3 nameClass text-monospace">
-                        Hi!  I am Archy,
+                        HELLO!
                     </MDBTypography>
                     <p className="story-text">
-                        Our humble origin for Archy Cooks dates back to 23rd June 2018, a couple just casually chatting about their life goals over a cup of ‘Masala Chai’ & boom - Archy Cooks was founded & established.
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
                     </p>
                     <p className="story-text">
-                        We first went public with our first ever market stall on 2nd September 2018. Our business has modelled into delivering super-tasty Vegetarian & Vegan delicacies to the communities & Adelaide’s foodies! We love cooking Indian Curries & Street Food, in saying that, we are also well & truly into Fusion Cuisine, meaning we love vegetarianising favorite dishes & flavour profiles from around the world & adding a dash of Indian touch to create our version of an irrestitable chomp! 
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like.
                     </p>
                     </Fade>
                 </MDBCol>
