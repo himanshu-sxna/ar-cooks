@@ -10,7 +10,7 @@ import { MDBNavbar,
          MDBTypography } from "mdbreact";
 import Fade from 'react-reveal/Fade';
 import "./hero.css";
-import img from "../../images/hero2 (2).jpg";
+import img from "../../images/hero.jpg";
 
 function Hero() {
 
@@ -26,7 +26,7 @@ function Hero() {
       <header>
         <MDBNavbar dark expand="md" color="default-color-dark" transparent fixed="top" scrolling scrollingNavbarOffset={820} className="introWrapper">
         <MDBNavbarBrand href="/">
-          <strong>Archy Cooks Logo</strong>
+          <strong>LOGO</strong>
         </MDBNavbarBrand>
         {!isWideEnough && <MDBNavbarToggler onClick={onClick} />}
         <MDBCollapse isOpen={collapse} navbar>
@@ -35,13 +35,10 @@ function Hero() {
               <MDBNavLink to="/home">HOME</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem className="navPills">
-              <MDBNavLink  to="#">PRODUCTS</MDBNavLink>
+              <MDBNavLink  to="/products">PRODUCTS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem className="navPills" >
               <MDBNavLink to="/blog">BLOG</MDBNavLink>
-            </MDBNavItem>
-            <MDBNavItem className="navPills" >
-              <MDBNavLink to="#">CONTACT</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>
@@ -50,22 +47,22 @@ function Hero() {
           <MDBMask overlay="black-strong" className="flex-center flex-column text-white text-center">
             <Fade cascade duration={2000}>
             <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
-              Refined Taste
+              Landing Page
             </MDBTypography>
             </Fade>
             <Fade cascade delay={1000} duration={2000}>
             <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
-              Authentic Flavors
+              Online Store
             </MDBTypography>
             </Fade>
             <Fade cascade delay={2000} duration={2000}>
             <MDBTypography tag="h3" variant="h3-responsive" className="hero-h3 mx-1">
-              Innovative Vegetarian Recipes
+              Online Blog
             </MDBTypography>
             </Fade>
             <Fade cascade delay={3000} duration={2500}>
             <MDBTypography tag="h1" variant="h1-responsive" className="hero-h1 mx-1" >
-              Welcome to Archy Cooks
+              Get Your Business Online
             </MDBTypography>
             </Fade>
           </MDBMask>
