@@ -12,9 +12,9 @@ import { MDBContainer,
          MDBCollapse } from "mdbreact";
 import Fade from 'react-reveal/Fade';
 import "./services.css";
-import dBoxImg from "../../images/delivery_box.jpg";
-import eventImg from "../../images/events.jpg";
-import classImg from "../../images/culinary_masterclass.jpg";
+import service1Img from "../../images/service1.jpg";
+import service2Img from "../../images/service2.jpg";
+import service3Img from "../../images/service3.jpg";
 
 
 function Services() {
@@ -25,22 +25,22 @@ function Services() {
 
     const allServices = [
         {
-            image: dBoxImg,
-            title: "Delivery Box",
+            image: service1Img,
+            title: "Service One",
             short: "Quick example text to define the title",
             desc: "Long example text to offer mor einformation for the advertised product, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
             collapseId: collapse1
         },
         {   
-            image: eventImg,
-            title: "Events",
+            image: service2Img,
+            title: "Service Two",
             short: "Quick example text to define the title",
             desc: "Long example text to offer mor einformation for the advertised product, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
             collapseId: collapse2
         },
         {   
-            image: classImg,
-            title: "Culinary Masterclass",
+            image: service3Img,
+            title: "Service Three",
             short: "Quick example text to define the title",
             desc: "Long example text to offer more information for the advertised product. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
             collapseId: collapse3
@@ -49,13 +49,13 @@ function Services() {
 
     function toggleCollapse(id) {
         switch (id) {
-            case "Delivery Box":
+            case allServices[0].title:
                 !collapse1 ? SetCollapse1(true) : SetCollapse1(false);
                 break;
-            case "Events":
+            case allServices[1].title:
                 !collapse2 ? SetCollapse2(true) : SetCollapse2(false);
                 break;
-            case "Culinary Masterclass":
+            case allServices[2].title:
                 !collapse3 ? SetCollapse3(true) : SetCollapse3(false);
                 break;
             default:
@@ -75,7 +75,7 @@ function Services() {
             <MDBRow className="text-center mt-4">
                 <MDBCol>
                     <MDBTypography tag="p" variant="h4-responsive" className="service-desc">
-                    We are into catering and have a few other interesting things going on, basically more than one ways you could try our lip-smacking food!
+                    We would love working with you and offer the below services.
                     </MDBTypography>
                 </MDBCol>
             </MDBRow>
