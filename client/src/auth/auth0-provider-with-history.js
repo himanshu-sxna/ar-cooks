@@ -14,8 +14,8 @@ const Auth0ProviderWithHistory = ({ children }) => {
 
   return (
     <Auth0Provider
-      domain={domain}
-      clientId={clientId}
+      domain={"dev-ffadjxqj.au.auth0.com"}
+      clientId={"b67giT7oc4UHZdDyyGlZo9YJEilYbqBv"}
       redirectUri={"https://smb-template.herokuapp.com/admin"}
       onRedirectCallback={onRedirectCallback}
     >
