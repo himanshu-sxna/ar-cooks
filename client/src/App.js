@@ -1,23 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import API from "./utils/API";
 import Home from "./pages/Home/Home";
 import Blog from "./pages/Blog/Blog";
 import Products from "./pages/Products/Products";
-import contact from "./"
+import JournalDetail from "./pages/JournalDetail/JournalDetail";
+import AdminMain from "./pages/Admin/adminMain";
+import ProtectedRoute from "./auth/protected-route";
 
 function App() {
-
-  const [ state, setState ] = useState();
-
-  useEffect(() => { 
-    API.APICall()
-    .then(res => {
-      console.log(res);
-      setState(res.data.success);
-    })
-  }, [state]);
-
 
   return (
     <Router>
@@ -26,6 +16,9 @@ function App() {
         <Route exact path="/home" component = {Home}/>
         <Route exact path="/blog" component={Blog}/>
         <Route exact path ="/products" component={Products}/>
+        <Route exact path="/blog/:id" component={JournalDetail} />
+        <ProtectedRoute exact path="/admin" component={AdminMain} />
+        <Route exact path="/" component= {Home}/>
       </Switch>
     </Router>
   );
