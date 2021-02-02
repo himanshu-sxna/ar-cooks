@@ -1,0 +1,6 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
