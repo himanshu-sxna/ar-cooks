@@ -4,3 +4,6 @@
 .appStyles {
     font-family: 'Kumbh Sans', sans-serif;
 }
+.snipcart-modal__container {
+    margin-top: 50px !important;
+}
