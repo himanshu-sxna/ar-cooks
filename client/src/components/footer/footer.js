@@ -4,14 +4,14 @@ import { MDBCol,
          MDBRow, 
          MDBFooter,
          MDBTypography } from "mdbreact";
+import LoginBtn from "../utils/LoginButton";
 import img1 from "../../images/insta1.jpg";
-import img2 from "../../images/insta 2.jpg";
+import img2 from "../../images/insta2.jpg";
 import img3 from "../../images/insta3.jpg";
 import img4 from "../../images/insta4.jpg";
-import img5 from "../../images/insta5jpg.jpg";
-import img6 from "../../images/insta6.jpg";
 
-const imgArray = [ img1, img2, img3, img4, img5, img6 ];
+
+const imgArray = [ img1, img2, img3, img4, ];
 
 function Footer() {
   return (
@@ -20,13 +20,13 @@ function Footer() {
         <MDBRow className="text-center">
           <MDBCol>
             <MDBTypography variant="h1-responsive" tag="p">
-                follow us @archycooks
+                follow us @INSTAGRAM
               </MDBTypography>
           </MDBCol>
         </MDBRow>
-        <MDBRow className="mt-4">
+        <MDBRow className="mt-4 text-center">
           { imgArray.map ((image) =>
-          <MDBCol>
+          <MDBCol md="3">
             <img src={image} alt="instaimg.jpg" className="m-2 img-fluid"/>
           </MDBCol> 
           )}
@@ -34,7 +34,7 @@ function Footer() {
         <MDBRow className="text-center mt-3 pb-3">
           <MDBCol md="3" lg="3" xl="3" className="mx-auto mt-3">
             <h6 className="text-uppercase mb-4 font-weight-bold">
-              ARCHY COOKS LOGO
+              LOGO
             </h6>
           </MDBCol>
         </MDBRow>
@@ -42,7 +42,7 @@ function Footer() {
           <MDBCol className="mx-auto mt-3">
             <p>
               <a href="mailto:archycooks1@gmail.com">
-                <i className="fa fa-envelope mr-1" /> archycooks1@gmail.com
+                <i className="fa fa-envelope mr-1" /> mybuiseness@mail.com
               </a>
             </p>
             <p>
@@ -75,8 +75,13 @@ function Footer() {
         </MDBRow>
         <MDBRow className="text-center">
           <MDBCol>
+          <LoginBtn/>
+          </MDBCol>
+        </MDBRow>
+        <MDBRow className="text-center">
+          <MDBCol>
               <p className="grey-text">
-                &copy; {new Date().getFullYear()} Copyright:{" Archy Cooks"}
+                &copy; {new Date().getFullYear()} Copyright:{"My Business"}
               </p>
             </MDBCol>
         </MDBRow>
