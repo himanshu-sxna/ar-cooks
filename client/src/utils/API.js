@@ -21,6 +21,19 @@ export default {
        data: journalData
      })
    },
+   getProducts: function() {
+    return axios({
+      url: "/api/product",
+      method: "GET",
+    });
+   },
+   uploadProducts: function(prodData) {
+    return axios({
+      url: "/api/product",
+      method: "POST",
+      data: prodData
+    });
+   }
 };
   
 
