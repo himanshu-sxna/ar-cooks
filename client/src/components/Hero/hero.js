@@ -31,11 +31,11 @@ function Hero() {
         {!isWideEnough && <MDBNavbarToggler onClick={onClick} />}
         <MDBCollapse isOpen={collapse} navbar>
           <MDBNavbarNav right>
-            <MDBNavItem className="navPills">
+            <MDBNavItem active className="navPills">
               <MDBNavLink to="/home">HOME</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem className="navPills">
-              <MDBNavLink  to="/products">PRODUCTS</MDBNavLink>
+              <MDBNavLink to="/products">PRODUCTS</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem className="navPills" >
               <MDBNavLink to="/blog">BLOG</MDBNavLink>
