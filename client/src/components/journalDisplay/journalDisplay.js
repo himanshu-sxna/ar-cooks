@@ -31,12 +31,9 @@ function JournalDisplay(props) {
                     <MDBTypography tag="p" className="font-weight-bolder mt-3 nameClass text-monospace">
                         By:{journal.author}
                     </MDBTypography>
-                    <MDBTypography tag="p" className="font-weight-bolder mt-3 nameClass text-monospace">
-                        {journal.date}
-                    </MDBTypography>
                 </MDBCol>
             </MDBRow>
-            <MDBRow className="text-center mt-3">
+            <MDBRow className="text-center mt-3 ">
                 <MDBCol>
                     {journal.body}
                 </MDBCol>
