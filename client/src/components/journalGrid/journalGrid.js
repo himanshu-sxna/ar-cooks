@@ -49,14 +49,13 @@ function JournalGrid() {
                 <MDBCol>         
                     <MDBCard key={item._id}>
                         <div className="card-horizontal">
-                            <MDBCardImage className="img-fluid" src={item.imageURL}
+                            <MDBCardImage className="card-img-top" src={item.imageURL}
           waves />
                             <MDBCardBody>
-                                <MDBCardTitle>{item.title}</MDBCardTitle>
-                                <MDBCardText>By: {item.author}</MDBCardText>
-                                <MDBCardText>{item.date}</MDBCardText>
+                                <MDBCardTitle className="card-title">{item.title}</MDBCardTitle>
+                                <MDBCardText className="card-author">By: {item.author}</MDBCardText>
                                 <Link to={"/blog/" + item._id}>
-                                    <MDBBtn href="#">Read more</MDBBtn>
+                                    <MDBBtn size="lg" href="#">Read more</MDBBtn>
                                 </Link>
                             </MDBCardBody>
                         </div>
