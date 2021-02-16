@@ -11,6 +11,7 @@ import { MDBNavbar,
 import Fade from 'react-reveal/Fade';
 import "./hero.css";
 import img from "../../images/hero.jpg";
+import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
 
 function Hero() {
 
@@ -66,6 +67,7 @@ function Hero() {
             </MDBTypography>
             </Fade>
           </MDBMask>
+          <ShoppingCartFAB/>
         </MDBView>
       </header>
     );
