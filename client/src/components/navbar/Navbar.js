@@ -5,8 +5,7 @@ import { MDBNavbar,
          MDBNavbarToggler, 
          MDBCollapse, 
          MDBNavItem, 
-         MDBNavLink,
-                    } from 'mdbreact';
+         MDBNavLink } from 'mdbreact';
 import "./navbarStyles.css";
 
 function Navbar () {

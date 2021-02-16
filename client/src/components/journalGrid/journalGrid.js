@@ -13,6 +13,7 @@ import { MDBContainer,
 import API from  "../../utils/API";
 import "../services/services.css";
 import "./journalGrid.css";
+import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
 
 function JournalGrid() {
 
@@ -63,6 +64,7 @@ function JournalGrid() {
                 </MDBCol>
             </MDBRow>
             )}
+            <ShoppingCartFAB/>
         </MDBContainer>
     );
 }

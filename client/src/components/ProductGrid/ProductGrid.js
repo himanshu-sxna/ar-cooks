@@ -11,6 +11,7 @@ import { MDBContainer,
          MDBCardText, } from "mdbreact";
 import API from  "../../utils/API";
 import "../services/services.css";
+import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
 
 function ProductGrid() {
 
@@ -51,9 +52,9 @@ function ProductGrid() {
                                     {product.description}
                                 </MDBCardText>
                                 <MDBCardText style={{fontSize: "1.15em"}} className="black-text">
-                                   <strong>${product.price}</strong> 
+                                   <strong>${product.price}.00</strong> 
                                 </MDBCardText>
-                                <MDBBtn className="snipcart-add-item mt-auto" href="#" data-item-id={product.productID} data-item-name={product.name} data-item-url="/" data-item-price={product.price}>
+                                <MDBBtn className="snipcart-add-item mt-auto" data-item-id={product.productID} data-item-name={product.name} data-item-url="/" data-item-price={product.price} data-item-image={product.imageUrl} data-item-description={product.description}>
                                     Add to Cart
                                 </MDBBtn>
                             </MDBCardBody>
@@ -61,6 +62,7 @@ function ProductGrid() {
                    </MDBCol>
                    )} 
                 </MDBRow>
+                <ShoppingCartFAB/>
             </MDBContainer>
     );
 }
