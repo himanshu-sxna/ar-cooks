@@ -4,13 +4,13 @@ export default {
 
     getJournals: function() {
        return axios({
-            url: "http://localhost:3001/api/journal",
+            url: "/api/journal",
             method: "GET",
           });
     },
     getJournalbyID: function(id) {
       return axios({
-           url: "http://localhost:3001/api/journal/" + id,
+           url: "/api/journal/" + id,
            method: "GET",
          });
    },
