@@ -33,6 +33,14 @@ export default {
       method: "POST",
       data: prodData
     });
+   },
+   sendSessionID: function (sessionID) {
+     return axios({
+       url:"http://localhost:3001/api/snipcart/getsession",
+       method: "POST",
+       data: {"sessionID" : sessionID }
+     }
+     )
    }
 };
   
