@@ -1,4 +1,4 @@
-import React,  { useState } from "react";
+import React,  { useState, useContext } from "react";
 import { MDBNavbar,
          MDBNavbarBrand,
          MDBNavbarNav,
@@ -12,8 +12,11 @@ import Fade from 'react-reveal/Fade';
 import "./hero.css";
 import img from "../../images/hero.jpg";
 import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
+import CartContext from "../context/cartContext";
 
 function Hero() {
+
+  const { displayCart } = useContext(CartContext);
 
   const [ collapse, SetCollapse ] = useState();
   const [ isWideEnough, SetIsWideEnough ] = useState();
@@ -21,7 +24,6 @@ function Hero() {
   function onClick() {
       SetCollapse(!collapse);
   };
-
 
     return(
       <header>
@@ -67,7 +69,7 @@ function Hero() {
             </MDBTypography>
             </Fade>
           </MDBMask>
-          <ShoppingCartFAB/>
+          { displayCart && <ShoppingCartFAB/> }
         </MDBView>
       </header>
     );

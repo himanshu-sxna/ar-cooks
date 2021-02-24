@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { MDBContainer, 
          MDBRow, 
          MDBCol,
@@ -12,8 +12,11 @@ import { MDBContainer,
 import API from  "../../utils/API";
 import "../services/services.css";
 import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
+import CartContext from "../context/cartContext";
 
 function ProductGrid() {
+
+    const { displayCart } = useContext(CartContext);
 
     const [ ProductArray, SetProductArray ]  = useState([]);
 
@@ -62,7 +65,7 @@ function ProductGrid() {
                    </MDBCol>
                    )} 
                 </MDBRow>
-                <ShoppingCartFAB/>
+                 <ShoppingCartFAB style={ displayCart ? { display:'block'} : {display : 'none'} } /> 
             </MDBContainer>
     );
 }

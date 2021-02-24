@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { MDBContainer, 
          MDBRow, 
@@ -14,11 +14,13 @@ import API from  "../../utils/API";
 import "../services/services.css";
 import "./journalGrid.css";
 import ShoppingCartFAB from "../utils/ShoppingCartFAB/shoppingcratFAB";
+import CartContext from "../context/cartContext";
 
 function JournalGrid() {
 
+    const { displayCart } = useContext(CartContext);
+    
     const [ JournalArray, SetJournalArray ]  = useState([]);
-    const [ isFetching, SetisFetching ] = useState();
 
     useEffect(() => {
         API.getJournals()
@@ -64,7 +66,7 @@ function JournalGrid() {
                 </MDBCol>
             </MDBRow>
             )}
-            <ShoppingCartFAB/>
+            { displayCart && <ShoppingCartFAB/> }
         </MDBContainer>
     );
 }
