@@ -2,8 +2,7 @@ import React from "react";
 import { MDBContainer,
          MDBRow, 
          MDBCol, 
-         MDBBtn, 
-         MDBIcon, 
+         MDBBtn,  
          MDBInput,
          MDBTypography } from 'mdbreact';
 import "../services/services.css";
@@ -25,7 +24,7 @@ return (
                         We would love to hear from you.
                     </MDBTypography>
                     <MDBTypography tag="p" className="pt-2">
-                        <a href="mailto:archycooks1@gmail.com" >
+                        <a href="#" >
                             <i className="fa fa-envelope mr-2 icon-text" /> 
                             <span className="icon-text">mybusiness@mail.com</span> 
                         </a>
