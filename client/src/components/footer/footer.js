@@ -26,7 +26,7 @@ function Footer() {
         </MDBRow>
         <MDBRow className="mt-4 text-center">
           { imgArray.map ((image) =>
-          <MDBCol md="3">
+          <MDBCol md="3" key={image}>
             <img src={image} alt="instaimg.jpg" className="m-2 img-fluid"/>
           </MDBCol> 
           )}

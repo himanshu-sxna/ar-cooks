@@ -81,9 +81,9 @@ function Services() {
             </MDBRow>
             <MDBRow className="mt-5">
             { allServices.map((service) =>
-                <MDBCol lg="4" className="mt-1">
+                <MDBCol key={service.title} lg="4" className="mt-1">
                     <Fade bottom> 
-                        <MDBCard key={service.title}>
+                        <MDBCard>
                             <MDBCardImage hover overlay="white-slight" className=" card-img-top" src={service.image}/>
                             <MDBCardBody className="text-center">
                                 <MDBCardTitle>{service.title}</MDBCardTitle>
