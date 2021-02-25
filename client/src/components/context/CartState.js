@@ -3,7 +3,7 @@ import CartContext from "./cartContext";
 
 function CartState (props) {
 
-    const [ displayCart, SetDisplayCart ] = useState(false);
+    const [ displayCart, SetDisplayCart ] = useState(true);
 
     return (
         <CartContext.Provider value={{
